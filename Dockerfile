@@ -1,6 +1,6 @@
-FROM docker.io/solanalabs/rust
+FROM docker.io/library/rust:1.75
 
-RUN sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
+RUN sh -c "$(curl -sSfL https://release.anza.xyz/v2.0.3/install)"
 
 WORKDIR /usr/src
 
