@@ -1,0 +1,16 @@
+
+* A dockerfile for Solana's cargo-build-sbf
+
+It better to use ~podman~ to let output owned by current user.
+
+*** Build the image
+
+#+begin_src bash
+  podman build -t cargo-sbf .
+#+end_src
+
+*** Run the image
+
+#+begin_src bash
+  podman run --rm -it -v=.:/usr/src/app cargo-sbf /bin/bash
+#+end_src
